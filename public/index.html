@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bee Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="startSection" class="start-section">
+      <h1>Bee Game</h1>
+      <div class="input-section">
+        <label>Enter your name:</label>
+        <input type="text" id="playerNameInput" placeholder="Your name" />
+      </div>
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="gameSection" class="hidden-section">
+      <h2>
+        Welcome,
+        <span id="playerName"></span>
+        ! Let's play!
+      </h2>
+      <div id="swarmHealth" class="swarm-health"></div>
+
+      <div id="beeStatus" class="bee-status"></div>
+      <div class="controls">
+        <button id="hitBtn">Hit</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div id="lastHit" class="lastHit"></div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

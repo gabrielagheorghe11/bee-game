@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fbe6a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 10rem 6rem 10rem;
+  border: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-section h1 {
+  font-size: 4rem;
+  color: #f5a623;
+  margin-bottom: 30px;
+}
+
+.input-section label {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.input-section input {
+  padding: 5px;
+  border: 2px solid #f5e4a7;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-section input:focus {
+  outline: none;
+  border-color: #f5a623;
+  background-color: #fffdf2;
+}
+
+.start-section button,
+.controls button {
+  padding: 10px 30px;
+  background-color: #f5a623;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+.start-section button:hover {
+  background-color: #e4951c;
+}
+
+.hidden-section {
+  display: none;
+}
+
+.swarm-health {
+  font: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+}
+.lastHit {
+  padding: 1rem 6rem;
+  font-weight: bold;
+  color: #444;
+}
+.bee-group {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.bee {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+.bee.hit {
+  background-color: #ffe0e0;
+  animation: shake 0.3s;
+}
+.hit-type,
+.hit-damage {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.bee-bar {
+  height: 8px;
+  background-color: #a1e89d;
+  border-radius: 4px;
+  margin-top: 4px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
